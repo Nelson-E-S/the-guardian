@@ -20,7 +20,7 @@ export default class CardBox extends Component{
     render(){
         let artClass = `${this.props.cardType} ${this.props.cardFlavor}`
         let artStyle = {
-            width: `${this.props.widthMod * this.state.width}px`
+            width: `${this.props.widthMod * this.state.width + ((this.props.widthMod - 1) * 20)}px`
         }
         return(
             <article className={artClass} style={artStyle}>

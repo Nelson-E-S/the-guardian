@@ -6,9 +6,17 @@
 }
 /*card styles*/
 /*general*/
+.App{
+  display: flex;
+  justify-content: center;
+}
 article{
+  flex: 1 0 auto;
   display: flex;
   background: #ededed;
+  margin-top: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 article .title{
   margin-top: 6px;
@@ -48,7 +56,7 @@ article:hover{
 /*news / opinion / sport / culture / lifestyle*/
 /*news styling*/
 .news{
-  border-top: 1px solid #c70000;
+  border-top: 2px solid #c70000;
 }
 .news .headLine, 
 .news .quote,
@@ -58,7 +66,7 @@ article:hover{
 }
 /*opinion styling*/
 .opinion{
-  border-top: 1px solid #e05e00;
+  border-top: 2px solid #e05e00;
 }
 .opinion .headLine, 
 .opinion .quote,
@@ -68,7 +76,7 @@ article:hover{
 }
 /*opinion styling*/
 .sport{
-  border-top: 1px solid #0084c6;
+  border-top: 2px solid #0084c6;
 }
 .sport .headLine, 
 .sport .quote,
@@ -78,7 +86,7 @@ article:hover{
 }
 /*culture styling*/
 .culture{
-  border-top: 1px solid #a1845c;
+  border-top: 2px solid #a1845c;
 }
 .culture .headLine, 
 .culture .quote,
@@ -88,7 +96,7 @@ article:hover{
 }
 /*lifestyle styling*/
 .lifestyle{
-  border-top: 1px solid #bb3b80;
+  border-top: 2px solid #bb3b80;
 }
 .lifestyle .headLine, 
 .lifestyle .quote,
@@ -96,3 +104,26 @@ article:hover{
 .lifestyle:hover{
   color: #bb3b80;
 }
+/*section styling*/
+/*general*/
+section{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.leftColumn{
+  flex: 0 0 auto;
+  width: 240px;
+}
+.sectionContent .row{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+.column, .row .regular{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.vline{
+  border-right: 1px solid lightgrey;
+}
+/*headLine section*/
