@@ -8,6 +8,7 @@ function App() {
       <SectionBox sectionTitle="headLines" />
       <SectionBox sectionTitle="spotLight" />
       <SectionBox sectionTitle="opinionSection" />
+      <SectionBox sectionTitle="sportsSection" />
     </div>
   );
 }
