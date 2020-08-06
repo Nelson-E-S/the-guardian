@@ -4,3 +4,34 @@
   margin: 0;
   border: 0;
 }
+/*card styles*/
+/*general*/
+article{
+  display: flex;
+}
+article .title{
+  margin-top: 6px;
+}
+article .description{
+  margin-top: 12px;
+}
+/*tall*/
+.tall{
+  flex-flow: column nowrap;
+}
+.tall img{
+  width: 100%;
+}
+.tall p{
+  margin-left: 6px;
+}
+/*short*/
+.short{
+  flex-flow: row nowrap;
+}
+.short img{
+  width: 160px;
+}
+.short p{
+  margin-left: 6px;
+}
