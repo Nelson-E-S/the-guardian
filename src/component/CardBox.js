@@ -26,7 +26,7 @@ export default class CardBox extends Component{
             <article className={artClass} style={artStyle}>
                 {this.props.imageAdd?<img src={this.props.imageSrc} alt="card" />:''}
                 <div>
-        <p className="title"><span className="headLine">{this.props.headLine}</span> {this.props.headLine?'/':''} {this.props.isQuote?<span className="quote">"</span>:''}{this.props.subLine}{this.props.isQuote?<div><em className="author">{this.props.author}</em></div>:''}</p>
+        <p className="title"><span className="headLine">{this.props.headLine}</span> {this.props.headLine?'/':''} {this.props.isQuote?<span className="quote">"</span>:''}{this.props.subLine}{this.props.isQuote?<span><br /><em className="author">{this.props.author}</em></span>:''}</p>
                     {this.props.descAdd?<p className="description">{this.props.descLine}</p>:''}
                 </div>
             </article>
