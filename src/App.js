@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <CardBox 
         cardType="short"
-        cardFlavor="news"
+        cardFlavor="lifestyle"
         isQuote={true}
         author="Ankita Rao"
         imageAdd={true}

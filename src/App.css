@@ -8,12 +8,22 @@
 /*general*/
 article{
   display: flex;
+  background: #ededed;
 }
 article .title{
   margin-top: 6px;
 }
 article .description{
   margin-top: 12px;
+}
+article .quote{
+  font-weight: bolder;
+}
+article .headLine{
+  font-weight: bold;
+}
+article:hover{
+  cursor: pointer;
 }
 /*tall*/
 .tall{
@@ -34,4 +44,55 @@ article .description{
 }
 .short p{
   margin-left: 6px;
+}
+/*news / opinion / sport / culture / lifestyle*/
+/*news styling*/
+.news{
+  border-top: 1px solid #c70000;
+}
+.news .headLine, 
+.news .quote,
+.news .author,
+.news:hover{
+  color: #c70000;
+}
+/*opinion styling*/
+.opinion{
+  border-top: 1px solid #e05e00;
+}
+.opinion .headLine, 
+.opinion .quote,
+.opinion .author,
+.opinion:hover{
+  color: #e05e00;
+}
+/*opinion styling*/
+.sport{
+  border-top: 1px solid #0084c6;
+}
+.sport .headLine, 
+.sport .quote,
+.sport .author,
+.sport:hover{
+  color: #0084c6;
+}
+/*culture styling*/
+.culture{
+  border-top: 1px solid #a1845c;
+}
+.culture .headLine, 
+.culture .quote,
+.culture .author,
+.culture:hover{
+  color: #a1845c;
+}
+/*lifestyle styling*/
+.lifestyle{
+  border-top: 1px solid #bb3b80;
+}
+.lifestyle .headLine, 
+.lifestyle .quote,
+.lifestyle .author,
+.lifestyle:hover{
+  color: #bb3b80;
 }
