@@ -110,6 +110,7 @@ article:hover{
 section{
   display: flex;
   flex-flow: row nowrap;
+  margin-bottom: 20px;
 }
 .leftColumn{
   flex: 0 0 auto;
@@ -118,7 +119,7 @@ section{
 .sectionContent .row{
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
+  
 }
 .column, .row .regular{
   display: flex;

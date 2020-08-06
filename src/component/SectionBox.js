@@ -192,9 +192,9 @@ export default class SectionBox extends Component{
                             <div className="row">
                                 <div className="primary vline">
                                     <CardBox 
-                                                    cardType="short"
-                                                    cardFlavor="news"
-                                                    isQuote={false}
+                                                    cardType="tall"
+                                                    cardFlavor="opinion"
+                                                    isQuote={true}
                                                     author="Ankita Rao"
                                                     imageAdd={true}
                                                     imageSrc={imageOne}
@@ -287,6 +287,101 @@ export default class SectionBox extends Component{
                             </div>
                         </div>
                     </section>
+                );
+            }
+            case 'opinionSection':{
+                return(
+                    <section className={this.props.sectionTitle}>
+                            <div className="leftColumn">
+                                <h1>Opinion</h1>
+                            </div>
+                            <div className="sectionContent">
+                                <div className="row">
+                                    <div className="primary vline">
+                                        <CardBox 
+                                                    cardType="tall"
+                                                    cardFlavor="opinion"
+                                                    isQuote={true}
+                                                    author="Ankita Rao"
+                                                    imageAdd={true}
+                                                    imageSrc={imageOne}
+                                                    widthMod = {2}
+                                                    //headLine="Testing"
+                                                    subLine="This a test design" 
+                                                    descAdd={false}
+                                                    descLine="This is a test description line" />
+                                    </div>
+                                    <div className="column vline">
+                                        <CardBox 
+                                                    cardType="tall"
+                                                    cardFlavor="opinion"
+                                                    isQuote={true}
+                                                    author="Ankita Rao"
+                                                    imageAdd={true}
+                                                    imageSrc={imageOne}
+                                                    widthMod = {1}
+                                                    //headLine="Testing"
+                                                    subLine="This a test design" 
+                                                    descAdd={true}
+                                                    descLine="This is a test description line" />
+                                    </div>
+                                    <div className="column">
+                                        <CardBox 
+                                                    cardType="tall"
+                                                    cardFlavor="opinion"
+                                                    isQuote={true}
+                                                    author="Ankita Rao"
+                                                    imageAdd={true}
+                                                    imageSrc={imageOne}
+                                                    widthMod = {1}
+                                                    //headLine="Testing"
+                                                    subLine="This a test design" 
+                                                    descAdd={true}
+                                                    descLine="This is a test description line" />
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="column vline">
+                                        <CardBox 
+                                                    cardType="short"
+                                                    cardFlavor="opinion"
+                                                    isQuote={true}
+                                                    author="Ankita Rao"
+                                                    imageAdd={true}
+                                                    imageSrc={imageOne}
+                                                    widthMod = {2}
+                                                    //headLine="Testing"
+                                                    subLine="This a test design" 
+                                                    descAdd={false}
+                                                    descLine="This is a test description line" />
+                                        <CardBox 
+                                                    cardType="short"
+                                                    cardFlavor="opinion"
+                                                    isQuote={true}
+                                                    author="Ankita Rao"
+                                                    imageAdd={true}
+                                                    imageSrc={imageOne}
+                                                    widthMod = {2}
+                                                    //headLine="Testing"
+                                                    subLine="This a test design" 
+                                                    descAdd={false}
+                                                    descLine="This is a test description line" />
+                                        <CardBox 
+                                                    cardType="short"
+                                                    cardFlavor="opinion"
+                                                    isQuote={true}
+                                                    author="Ankita Rao"
+                                                    imageAdd={true}
+                                                    imageSrc={imageOne}
+                                                    widthMod = {2}
+                                                    //headLine="Testing"
+                                                    subLine="This a test design" 
+                                                    descAdd={false}
+                                                    descLine="This is a test description line" />
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                 );
             }
             default:{
